@@ -5,9 +5,9 @@
 **The training and inference code will be released soon.**
 
 ## Overview
-<img width="800" alt="Ai" src="https://github.com/user-attachments/assets/40308712-faad-4b06-b41d-3e6acecafa88">  
+<img width="800" alt="Ai" src="https://github.com/user-attachments/assets/8e833acd-fb1b-493c-b871-5e7a3131ad4e">  
 
-**An overview of our proposed SpatimeINR method**
+**An overview of our proposed NeurScope method**
 ## Get Started
 ### Dependencies and Installation
 - Python 3.11.0
