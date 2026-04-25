@@ -2,8 +2,6 @@
 
 **Motivations**: 4D microscopy is fundamentally constrained by system bandwidth, resulting in spatiotemporal sparse sampling. The crux of 4D microscopy super-resolution lies in deciphering biophysically meaningful dynamic processes rather than settling for mere numerical interpolation. However, existing methods predominantly rely on discrete numerical interpolation, which fails to preserve such physical fidelity during global non-linear biological evolutions. To overcome this dilemma, we propose Neural Spatiotemporal Scope (NeurScope), a physics-driven continuous generative paradigm. Diverging from traditional local interpolation, NeurScope utilizes high-frequency lateral observations as physical anchors and introduces a Neural Gaussian Integrator to adaptively model the spatiotemporal integration degradation and Dirac comb sampling inherent in microscopic imaging. By enforcing global manifold alignment within a continuous space, our framework formulates the ill-posed sparse reconstruction as a physical inverse problem strictly constrained by biological dynamics priors. Extensive experiments on cell migration and embryonic division tasks under sparsity (e.g., $6\times$ temporal downsampling) demonstrate that NeurScope not only achieves state-of-the-art reconstruction accuracy but also rigorously maintains biophysical consistency in morphological metrics such as volume, surface area, and sphericity, successfully extrapolating valid biological evolutionary logic from fragmented projections.
 
-**The training and inference code will be released soon.**
-
 ## Overview
 <img width="800" alt="Ai" src="https://github.com/user-attachments/assets/8e833acd-fb1b-493c-b871-5e7a3131ad4e">  
 
@@ -15,26 +13,26 @@
 
 1. Create Conda Environment
 ```
-conda create --name SpatimeINR python=3.11.0
-conda activate SpatimeINR
+conda create --name NeurScope python=3.11.0
+conda activate NeurScope
 conda install anaconda::git
 ```
 2. Clone Repo
 ```
-git clone https://github.com/cunminzhao/SpatimeINR.git
+git clone https://github.com/cunminzhao/NeurScope.git
 ```
 3. Install Dependencies
 ```
-cd SpatimeINR
+cd NeurScope
 pip install -r ./requirement.txt
 ```
 
 ### Dataset
 You can refer to the following links to download the datasets of our collected dataset in 
-[figshare](https://figshare.com/articles/dataset/Public_Raw_Data/29064530).
+[figshare](https://figshare.com/articles/dataset/Public_Raw_Data/29064530) and [Cell Tracking Challenge](https://celltrackingchallenge.net/3d-datasets/).
 
 ### Training  
-**Example**: to train yourdata with *SpatimeINR*, you need to keep these data in
+**Example**: to train yourdata with *NeurScope*, you need to keep these data in
 * **Structure of data folder**: 
     ```buildoutcfg
     data/
@@ -72,7 +70,7 @@ you will get your result in
  ``` 
 
 ## Compute Report
-This method was tested on both the NVIDIA RTX 4090 and A100, and will be released soon.
+This method was tested on both the NVIDIA RTX 4090, A100 and A6000, and will be released soon.
 
 ## Acknowledgement
 - We appreciate several previous works for their algorithms related/helpful to this project, including [*LIIF*](https://github.com/yinboc/liif), [*RCAN*](https://github.com/AiviaCommunity/3D-RCAN), [*CuNeRF*](https://github.com/NarcissusEx/CuNeRF), and [*SVIN*](https://github.com/yyguo0536/SVIN).
