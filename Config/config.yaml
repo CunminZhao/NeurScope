@@ -1,0 +1,74 @@
+# config.yaml
+max_iter: 20000
+save_iter: 5000
+log_iter: 10
+n_samples: 16
+len_lz: 92
+n_imps: 16
+save_path: "./save39"
+
+
+lambda_reg: 0.01         
+alpha_prior: 10.0        
+
+dataset:
+  train:
+    radius: 0.5
+    bsize: 5100
+    scale: 1
+    scaleT: 1
+    downsample: 2
+    file: "../data/01_4d_10.nii.gz"
+  eval:
+    radius: 0.5
+    bsize: 5100
+    scale: 1
+    scaleT: 2
+    downsample: 2
+    file: "../data/01_4d_10.nii.gz"
+
+dataloader:
+  train:
+    batch_size: 1
+    shuffle: true
+  eval:
+    batch_size: 1
+    shuffle: false
+
+rcan:
+  n_resgroups: 3
+  n_resblocks: 4
+  n_feats: 32
+  reduction: 16
+  out_channels: null
+  phase1_ratio: 0.2
+  patch_size: [64, 64, 64]
+  aug_f_range: [1.0, 4.5]
+
+optim:
+  name: "Adam"
+  lr: 0.0005
+  betas: [0.9, 0.999]
+  eps: 0.000001
+
+lr_decay:
+  lr_init: 0.0005
+  lr_final: 0.000005
+  max_iter: 20000
+  lr_delay_steps: 1000
+  lr_delay_mult: 0.01
+
+clip_grad:
+  max_val: 0.1
+  max_norm: 0.1
+
+
+model:
+  in_ch: 4
+  netD: 8
+  netW: 256
+  out_ch: 11             
+  latent_dim: 92
+  w0: 30.0
+  first_w0: 30.0
+  skips: [4]
