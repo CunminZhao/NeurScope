@@ -36,7 +36,7 @@ You can refer to the following links to download the datasets of our collected d
 * **Structure of data folder**: 
     ```buildoutcfg
     data/
-      |yourdata.nii.gz #data.shape=(x,y,z,t)
+      |yourdata.nii.gz 
     Config/
       |config.yaml
     ```
@@ -64,7 +64,7 @@ you will get your result in
  ```buildoutcfg
     save/
       |final_model.pth
-      |output.nii.gz #data.shape=(x*scale,y*scale,z*scale,t*scaleT)
+      |output.nii.gz 
  ``` 
 
 ## Compute Report
