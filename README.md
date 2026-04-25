@@ -50,8 +50,7 @@ you will get your result in
 * **Structure of save folder**: 
     ```buildoutcfg
     save/
-      |current.pth
-      |latent_code.pt
+      |final_model.pth
     ```
 
 
@@ -64,8 +63,7 @@ python inference.py --config ./Config/config.yaml --save_path "./save" --file ".
 you will get your result in 
  ```buildoutcfg
     save/
-      |current.pth
-      |latent_code.pt
+      |final_model.pth
       |output.nii.gz #data.shape=(x*scale,y*scale,z*scale,t*scaleT)
  ``` 
 
