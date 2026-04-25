@@ -29,7 +29,7 @@ pip install -r ./requirement.txt
 
 ### Dataset
 You can refer to the following links to download the datasets of our collected dataset in 
-[EmbSAM](https://figshare.com/articles/dataset/Public_Raw_Data/29064530) and [Cell Tracking Challenge](https://celltrackingchallenge.net/3d-datasets/).
+[EmbSAM figshare](https://figshare.com/articles/dataset/Public_Raw_Data/29064530) and [Cell Tracking Challenge](https://celltrackingchallenge.net/3d-datasets/).
 
 ### Training  
 **Example**: to train yourdata with *NeurScope*, you need to keep these data in
