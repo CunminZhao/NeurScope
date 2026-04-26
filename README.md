@@ -1,5 +1,7 @@
 ## Neural Spatiotemporal Manifold Extrapolation for 4D Microscopy Super-Resolution
 
+Source code of the paper "xxx"
+
 ### Installation
 ```
 git clone https://github.com/cunminzhao/NeurScope.git
