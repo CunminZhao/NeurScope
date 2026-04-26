@@ -13,7 +13,7 @@ python train.py --config ./Config/config.yaml --save_path "./save" --file "./dat
 ```
 
 ### Inference  
-Then run，where ```scale``` is the spatial resolution that you can set arbitrarily, and ```scaleT``` is the temporal resolution that you can set arbitrarily. ```yourdata``` is also necessary for the sampling shape.
+```scale``` is the spatial resolution that you can set arbitrarily, and ```scaleT``` is the temporal resolution that you can set arbitrarily. ```yourdata``` is also necessary for the sampling shape.
 ```
 python inference.py --config ./Config/config.yaml --save_path "./save" --file "./data/yourdata.nii.gz" --scale 1 --scaleT 2
 ```
