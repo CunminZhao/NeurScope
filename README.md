@@ -28,7 +28,7 @@ pip install -r ./requirement.txt
 ```
 
 ### Dataset
-You can refer to the following links to download the datasets of our collected dataset in 
+You can refer to the following links to download the full datasets of our collected dataset in 
 [EmbSAM figshare](https://figshare.com/articles/dataset/Public_Raw_Data/29064530) and [Cell Tracking Challenge](https://celltrackingchallenge.net/3d-datasets/).
 
 ### Training  
