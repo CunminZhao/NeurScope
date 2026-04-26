@@ -2,6 +2,9 @@
 
 **Motivations**: 4D microscopy is fundamentally constrained by system bandwidth, resulting in spatiotemporal sparse sampling. The crux of 4D microscopy super-resolution lies in deciphering biophysically meaningful dynamic processes rather than settling for mere numerical interpolation. However, existing methods predominantly rely on discrete numerical interpolation, which fails to preserve such physical fidelity during global non-linear biological evolutions. To overcome this dilemma, we propose Neural Spatiotemporal Scope (NeurScope), a physics-driven continuous generative paradigm. Diverging from traditional local interpolation, NeurScope utilizes high-frequency lateral observations as physical anchors and introduces a Neural Gaussian Integrator to adaptively model the spatiotemporal integration degradation and Dirac comb sampling inherent in microscopic imaging. By enforcing global manifold alignment within a continuous space, our framework formulates the ill-posed sparse reconstruction as a physical inverse problem strictly constrained by biological dynamics priors. Extensive experiments on cell migration and embryonic division tasks under sparsity (e.g., $6\times$ temporal downsampling) demonstrate that NeurScope not only achieves state-of-the-art reconstruction accuracy but also rigorously maintains biophysical consistency in morphological metrics such as volume, surface area, and sphericity, successfully extrapolating valid biological evolutionary logic from fragmented projections.
 
+
+Colab demo: [![Open DPC Demo In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1QNcRaNjG1CG58ffUURnYPWeIZMuuidZI?usp=sharing)
+
 ## Overview
 <img width="800" alt="Ai" src="https://github.com/user-attachments/assets/8e833acd-fb1b-493c-b871-5e7a3131ad4e">  
 
