@@ -9,7 +9,6 @@ Colab demo: [![Open DPC Demo In Colab](https://colab.research.google.com/assets/
 <img width="800" alt="Ai" src="https://github.com/user-attachments/assets/8e833acd-fb1b-493c-b871-5e7a3131ad4e">  
 
 **An overview of our proposed NeurScope method**
-## Get Started
 ### Dependencies and Installation
 - Python 3.11.0
 - Pytorch 2.0.1
