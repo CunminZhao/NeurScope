@@ -1,4 +1,4 @@
-## Neural Spatiotemporal Manifold Extrapolation for 4D Microscopy Super-Resolution
+## Neural Spatiotemporal Manifold Representation for 4D Microscopy Super-Resolution
 
 Source code of the paper "xxx"
 
