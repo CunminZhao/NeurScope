@@ -4,12 +4,12 @@ Source code of the paper "xxx"
 
 ### Installation
 ```
-git clone https://github.com/cunminzhao/NeurScope.git
-cd NeurScope
+git clone https://github.com/cunminzhao/NeurScopy.git
+cd NeurScopy
 pip install -r ./requirement.txt
 ```
 
-### Training NeurScope
+### Training NeurScopy
 ```
 python train.py --config ./Config/config.yaml --save_path "./save" --file "./data/yourdata.nii.gz"
 ```
